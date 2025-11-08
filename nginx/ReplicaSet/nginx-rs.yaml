@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replica-set
+  labels:
+    env: QA
+
+spec:
+  selector:
+    matchLabels:
+      env: QA
+  replicas: 2
+  template:
+    metadata:
+      name: nginx
+      labels:
+        env: QA
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
