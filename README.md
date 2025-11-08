@@ -12,3 +12,21 @@ kubernetes-projects/
  │ ├── nginx-rc.yaml
  │ └── README.md
  └── docs/ # Optional documentation
+
+ 
+## 🚀 Getting Started
+
+### Prerequisites
+- A running Kubernetes cluster (e.g., Minikube, Docker Desktop, or EKS)
+- `kubectl` CLI installed and configured
+
+### Deploy Example (NGINX)
+```bash
+kubectl apply -f nginx/nginx-deployment.yaml
+kubectl get pods
+kubectl get svc
+
+## Clean up
+
+kubectl delete -f nginx/
+
