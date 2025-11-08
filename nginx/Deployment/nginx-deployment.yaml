@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nginx-deployment
+  labels:
+    env: QA
+
+spec:
+  selector:
+    matchLabels:
+      env: QA
+  replicas: 3
+  template:
+    metadata:
+      name: nginx
+      labels:
+        env: QA
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
