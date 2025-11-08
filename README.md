@@ -5,9 +5,10 @@ This repository contains various Kubernetes configuration files and manifests fo
 ## 📁 Repository Structure
 
 kubernetes-projects/
-├── nginx/ # NGINX deployment examples
-│ ├── nginx.yaml
-│ ├── nginx-deployment.yaml
-│ ├── nginx-rc.yaml
-│ └── README.md
-└── docs/ # Optional documentation
+
+ ├── nginx/ # NGINX deployment examples
+ │ ├── nginx.yaml
+ │ ├── nginx-deployment.yaml
+ │ ├── nginx-rc.yaml
+ │ └── README.md
+ └── docs/ # Optional documentation
