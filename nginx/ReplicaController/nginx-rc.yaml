@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nginx-replica-controller
+  labels:
+    env: QA
+
+spec:
+  template:
+    metadata:
+      name: nginx
+      labels:
+        env: QA
+
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+  replicas: 2
